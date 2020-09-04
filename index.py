@@ -26,7 +26,7 @@ for row in soup.findAll('a',
         urls.append("https://gardinonursery.com/" + row['href'])
 
 # Seperate Urls into comma seperated Values
-urlsString = ''.join(map(str, urls))
+urlsString = '\n\n'.join(map(str, urls))
 
 body = f'{len(urls)} Hoyas are avalable! Thay\'re at these URLs {urlsString}'
 
@@ -51,4 +51,4 @@ def sendText():
 if (len(urls) > 1):
     sendText()
 else:
-    print('Only 1 Url')
+    print('No Hoyas avalable')
