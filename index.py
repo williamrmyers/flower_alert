@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Python program to scrape website
 # and save quotes from website
 import os
